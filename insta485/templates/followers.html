@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Followers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="topBar">
+            <div class="upperLeft">
+                <a href="/">
+                    /
+                </a>
+            </div>
+            <div class="upperRight">
+                <a href="/explore/">
+                    explore
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/u/{{logname}}/">
+                    {{logname}}
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>Followers</h1>  
+        {% for f in followers %}
+        <div class="profileTopBar">
+            <a href="/u/{{f.username}}/">
+                <img src="{{f.user_img_url}}" alt=profilePic.jpg>
+                <span style="font-weight:bold">{{f['username']}} </span>
+            </a>
+            {% if logname == f['username'] %}
+            {% elif f['logname_follows_username'] is true %}
+            <p style="float:right">following</p>
+            {% elif f['logname_follows_username'] is not true %}
+            <p style="float:right">not following</p>
+            {% endif %}
+        </div>
+        <br><br><br><br>
+        {% endfor %}
+    </body>
+</html>

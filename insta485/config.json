@@ -63,7 +63,7 @@
     }
   },
   {
-    "url": "/users/awdeorio/",
+    "url": "/u/awdeorio/",
     "template": "user.html",
     "context": {
       "logname": "awdeorio",
@@ -86,7 +86,7 @@
     }
   },
   {
-    "url": "/users/awdeorio/following/",
+    "url": "/u/awdeorio/following/",
     "template": "following.html",
     "context": {
       "logname": "awdeorio",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "url": "/users/awdeorio/followers/",
+    "url": "/u/awdeorio/followers/",
     "template": "followers.html",
     "context": {
       "logname": "awdeorio",
@@ -124,7 +124,7 @@
     }
   },
   {
-    "url": "/users/jflinn/",
+    "url": "/u/jflinn/",
     "template": "user.html",
     "context": {
       "logname": "awdeorio",
@@ -143,7 +143,7 @@
     }
   },
   {
-    "url": "/users/jflinn/following/",
+    "url": "/u/jflinn/following/",
     "template": "following.html",
     "context": {
       "logname": "awdeorio",
@@ -162,7 +162,7 @@
     }
   },
   {
-    "url": "/users/jflinn/followers/",
+    "url": "/u/jflinn/followers/",
     "template": "followers.html",
     "context": {
       "logname": "awdeorio",
@@ -179,7 +179,7 @@
 
 
   {
-    "url": "/users/jag/",
+    "url": "/u/jag/",
     "template": "user.html",
     "context": {
       "logname": "awdeorio",
@@ -198,7 +198,7 @@
     }
   },
   {
-    "url": "/users/jag/following/",
+    "url": "/u/jag/following/",
     "template": "following.html",
     "context": {
       "logname": "awdeorio",
@@ -212,7 +212,7 @@
     }
   },
   {
-    "url": "/users/jag/followers/",
+    "url": "/u/jag/followers/",
     "template": "followers.html",
     "context": {
       "logname": "awdeorio",
@@ -226,7 +226,7 @@
     }
   },
   {
-    "url": "/users/michjc/",
+    "url": "/u/michjc/",
     "template": "user.html",
     "context": {
       "logname": "awdeorio",
@@ -240,7 +240,7 @@
     }
   },
   {
-    "url": "/users/michjc/following/",
+    "url": "/u/michjc/following/",
     "template": "following.html",
     "context": {
       "logname": "awdeorio",
@@ -259,7 +259,7 @@
     }
   },
   {
-    "url": "/users/michjc/followers/",
+    "url": "/u/michjc/followers/",
     "template": "followers.html",
     "context": {
       "logname": "awdeorio",
@@ -283,7 +283,7 @@
     }
   },
   {
-    "url": "/posts/1/",
+    "url": "/p/1/",
     "template": "post.html",
     "context": {
       "logname": "awdeorio",
@@ -306,7 +306,7 @@
     }
   },
   {
-    "url": "/posts/2/",
+    "url": "/p/2/",
     "template": "post.html",
     "context": {
       "logname": "awdeorio",
@@ -325,7 +325,7 @@
     }
   },
   {
-    "url": "/posts/3/",
+    "url": "/p/3/",
     "template": "post.html",
     "context": {
       "logname": "awdeorio",
@@ -352,7 +352,7 @@
     }
   },
   {
-    "url": "/posts/4/",
+    "url": "/p/4/",
     "template": "post.html",
     "context": {
       "logname": "awdeorio",

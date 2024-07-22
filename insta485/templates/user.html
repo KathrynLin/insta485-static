@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>User Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="topBar">
+            <div class="upperLeft">
+                <a href="/">
+                    /
+                </a>
+            </div>
+            <div class="upperRight">
+                <a href="/explore/">
+                    explore
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <!--/u/{{logname}}/-->
+                <a href="/u/{{logname}}/">
+                    {{logname}}
+                </a>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="userProfile">
+            <h1>{{username}}</h1>
+            {% if logname_follows_username is true %}
+            <p>following</p>
+            {% elif logname_follows_username is not true %}
+            <p>not following</p>
+            {% elif logname_follows_username is not true and logname is username %}
+            <br>
+            {% endif %}
+
+            {% if total_posts == 1 and followers == 1%}
+            <p>{{total_posts}} post <span style="font-weight:bold"><a href="/u/{{username}}/followers/">
+                {{followers}} follower </a><a href="/u/{{username}}/following/">{{following}} following</a></span></p>
+            {% elif total_posts != 1 and followers == 1 %}
+            <p>{{total_posts}} posts <span style="font-weight:bold"><a href="/u/{{username}}/followers/">
+                {{followers}} follower </a><a href="/u/{{username}}/following/">{{following}} following</a></span></p>
+            {% elif total_posts == 1 and followers != 1 %}
+            <p>{{total_posts}} post <span style="font-weight:bold"><a href="/u/{{username}}/followers/">
+                {{followers}} followers </a><a href="/u/{{username}}/following/">{{following}} following</a></span></p>
+            {% else %}
+            <p>{{total_posts}} posts <span style="font-weight:bold"><a href="/u/{{username}}/followers/">
+                {{followers}} followers </a><a href="/u/{{username}}/following/">{{following}} following</a></span></p>           
+            {% endif %}
+
+            <p>{{fullname}}</p>
+            {% for post in posts %}
+            <a href="/p/{{post.postid}}/">
+                <img src="{{post.img_url}}" alt=gen1.jpg>
+            </a>
+            {% endfor %}
+        </div>
+     </body>
+</html>

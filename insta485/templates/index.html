@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>insta485</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="topBar">
+            <div class="upperLeft">
+                <a href="/">
+                    /
+                </a>
+            </div>
+            <div class="upperRight">
+                <a href="/explore/">
+                    explore
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/u/{{logname}}/">
+                    {{logname}}
+                </a>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        {% for post in posts %}
+        <div class="profilePost">
+            <div class="profileTopBar">
+                <a href="/u/{{ post.owner }}/">
+                    <img src="{{post.owner_img_url}}" alt=DenPic.jpg>
+                    <span style="font-weight:bold">{{post['owner']}} </span>
+                </a>
+                <a href="/p/{{post.postid}}/">
+                    <p style="float:right">{{post['timestamp']}}</p>
+                </a>
+            </div>
+            <div class="postImg">
+                <img src="{{post.img_url}}" alt=Crossword.jpg>
+            </div>
+            <div class="profileBottomBar">
+                {% if post['likes'] == 1 %}
+                <p>{{post['likes']}} like</p>
+                {% else %}
+                <p>{{post['likes']}} likes</p>
+                {% endif %}
+                {% for comment in post['comments'] %}
+                <p><a href="/u/{{comment.owner}}/"><span style="font-weight:bold">{{ comment.owner }}&nbsp;</span></a> {{ comment.text }}</p>
+                {% endfor %}
+            </div>
+        </div>        
+        {% endfor %}
+    </body>
+
+
+</html>
