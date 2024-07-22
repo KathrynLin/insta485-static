@@ -1,6 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-Hello world!
+
+<head>
+    <meta charset="UTF-8">
+    <title>insta485</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+    
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 25px;
+            gap: 20px;
+        }
+    
+        .page-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .post {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            border: 1px solid black;
+            gap: 5px;
+        }
+    
+        .post-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .post-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    
+        .user {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    </style>    
+</head>
+
+
+
+<body>
+    <div class="page-header">
+        <a href="/">Insta485</a>
+        <nav>
+            <a href="/explore/">explore</a>
+            <a href="/users/awdeorio/">awdeorio</a>
+        </nav>
+    </div>
+    <main>
+        <!-- Post 1 -->
+        <div class="post">
+            <div class="post-header">
+                <div class="user">
+                    <img src="images/e1a7c5c32973862ee15173b0259e3efdb6a391af.jpg" width="20" height="20"
+                        alt="user image">
+                    <a href="/users/awdeorio/">awdeorio</a>
+                </div>
+                <a href="/posts/3/">10 minutes ago</a>
+            </div>
+            <img src="images/9887e06812ef434d291e4936417d125cd594b38a.jpg" alt="Post image">
+            <div class="post-footer">
+                <span>1 like</span>
+                <div class="comment"> <a href="/users/awdeorio/">awdeorio</a> #chickensofinstagram </div>
+                <div class="comment"> <a href="/users/jflinn/">jflinn</a> I &lt;3 chickens </div>
+                <div class="comment"> <a href="/users/michjc/">michjc</a> Cute overload! </div>
+            </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post">
+            <div class="post-header">
+                <div class="user">
+                    <img src="images/505083b8b56c97429a728b68f31b0b2a089e5113.jpg" width="20" height="20"
+                        alt="user image">
+                    <a href="/users/jflinn/">jflinn</a>
+                </div>
+                <a href="/posts/2/">4 hours ago</a>
+            </div>
+            <img src="images/ad7790405c539894d25ab8dcf0b79eed3341e109.jpg" alt="Post image">
+            <div class="post-footer">
+                <span>2 likes</span>
+                <div class="comment"> <a href="/users/awdeorio/">awdeorio</a> Sick #crossword </div>
+            </div>
+            <!-- Post 2 -->
+            <!-- ... Similar structure for Post 2 -->
+            <!-- Post 3 -->
+            <!-- ... Similar structure for Post 3 -->
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post">
+            <div class="post-header">
+                <div class="user">
+                    <img src="images/e1a7c5c32973862ee15173b0259e3efdb6a391af.jpg" width="20" height="20"
+                        alt="user image">
+                    <a href="/users/awdeorio/">awdeorio</a>
+                </div>
+                <a href="/posts/1/">a day ago</a>
+            </div>
+            <img src="images/122a7d27ca1d7420a1072f695d9290fad4501a41.jpg" alt="Post image">
+            <div class="post-footer">
+                <span>3 likes</span>
+                <div class="comment"> <a href="/users/jflinn/">jflinn</a> Walking the plank #chickensofinstagram </div>
+                <div class="comment"> <a href="/users/awdeorio/">awdeorio</a> This was after trying to teach them to do
+                    a #crossword </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>
-
-

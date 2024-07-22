@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>insta485</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #page-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #post {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+        }
+
+        #post-header {
+            display: flex;
+            flex-direction: column;
+            /* align-items: left; */
+        }
+
+        #post-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #post-img .img{
+            width: 50%;
+        } 
+
+
+        #relationship {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        #name {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-header">
+        <a href="/" id="home-link">Insta485</a>
+        <nav>
+            <a href="/explore/">explore</a>
+            <a href="/users/awdeorio/">awdeorio</a>
+        </nav>
+    </div>
+    <main>
+        <!-- Post 1 -->
+        <div id="post">
+            <div id="post-header">
+                <p style="font-size: 20px;">awdeorio</p>
+                <div id="relationship">
+                    <span>2 posts</span>
+                    <a href="/users/awdeorio/followers/">2 followers</a>
+                    <a href="/users/awdeorio/following/">2 following</a>
+                </div>
+                <div id="name">
+                    <span>Andrew</span>
+                    <span>DeOrio</span>
+                </div>
+            </div>
+            <div id="post-img">
+                <div class="img"><a href="/posts/1/"><img src="/uploads/122a7d27ca1d7420a1072f695d9290fad4501a41.jpg" alt=""></a> </div>
+                <div class="img"><a href="/posts/3/"><img src="/uploads/9887e06812ef434d291e4936417d125cd594b38a.jpg" alt=""></a></div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
